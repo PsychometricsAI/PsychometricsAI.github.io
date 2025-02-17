@@ -21,7 +21,7 @@ body {
 
 .jumbotron2{text-align:justify;
 	padding-top:1em;
-	background-color: #ffcc3371;
+	background-color: #adc7dc;
 	padding-bottom:1em;
 	margin:auto;
 	font-size:110%}
@@ -32,23 +32,23 @@ body {
 	margin:0px 0 2px 0}
 	
 .navbar-custom {
-	background-color: #900021;
-	color: #FFCC33;
+	background-color: #00205b;
+	color: #e0e2e6;
 }
 
 /* change the brand and text color */
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-text {
-    color: #FFCC33;
+    color: #e0e2e6;
 }
 /* change the link color */
 .navbar-custom .navbar-nav .nav-link {
-    color: #FFCC33;
+    color: #e0e2e6;
 }
 /* change the color of active or hovered links */
 .navbar-custom .nav-item.active .nav-link,
 .navbar-custom .nav-item:hover .nav-link {
-    color: #eeb305;
+    color: #e0e2e6;
 }
 
 .members_wrapper {
