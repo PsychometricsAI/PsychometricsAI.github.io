@@ -83,11 +83,24 @@
     <hr>
 
     <h2>News</h2>
-    <br>
-
-
-
-
+    <div class="row">
+        <div class="col-md-5">
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <div class="slider_numbertext">1 / 2</div>
+                    <img src="img/group/siop_1.jpg" style="width:100%">
+                    <div class="slider_text">Christin and Xavior at SIOP! 2024 </div>
+                </div>                              	    
+                <div class="mySlides fade">
+                    <div class="slider_numbertext">2 / 2</div>
+                    <img src="img/group/siop_2.jpg" style="width:100%">
+                    <div class="slider_text">Ashley, Tianjun, Bo and Xavior at SIOP! 2024 </div>
+                </div>                              	    
+            </div>
+        </div>
+    </div>
     <br>
 
 
@@ -192,10 +205,24 @@
     </div>
 
 </div> <!-- /container -->
-<script type="text/javascript" src="js/slider.js"></script>
-<script type="text/javascript" src="js/myscript_footer.js"></script>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
-<script async type="text/javascript" src="js/widget.js"></script>
+
+
+<script>
+    let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+        let slides = document.getElementsByClassName("mySlides");
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 3000); // 3s
+    }
+    </script>
+
 
 </body>
 </html>
